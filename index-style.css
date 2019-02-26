@@ -1,0 +1,88 @@
+﻿:root {
+	--bg-color: #f3f3f3;
+	--nav-color: #d7fffc;
+	--nav-text-color: #ffffff;
+}
+
+.loading-screen {
+	width: 0;
+	height: 0;
+        opacity: 0;
+        transition: all 0.5s;
+}
+
+.loading-screen-on {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 99;
+        opacity: 1;
+}
+
+.grey-screen {
+	width: 100%;
+        height: 100%;
+        position: fixed;
+	background: black;
+	opacity: 0.75;
+}
+
+.loading-screen-text {
+	font-size: 15px;
+	letter-spacing: 2px;
+	width: 100%;
+	margin-top: 15%;
+	color: white;
+	opacity: 1;
+	position: fixed;
+	text-align: center;
+	z-index: 100;
+}
+
+body {
+	background: var(--bg-color);
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img{
+	border: 7px #e2e2e2 solid;
+}
+
+.resource-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* NAV BAR */
+
+.nav-bar {
+	width: 100%;
+	height: 5%;
+	background: var(--nav-color);
+	position: static;
+}
+
+.nav-bar > .tab {
+	width: 19.5%;
+	height: 100%;
+	padding: 10px 0 10px 0;
+	line-height: 50px;
+	text-align: center;
+	color: var(--nav-text-color);
+	display: inline-block;
+	margin: 0;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.nav-bar > .tab:hover {
+  	text-decoration: underline;
+  	height: calc(100% + 10px);
+}
+
+.content {
+	width: 80%;
+	margin-left: 10%;
+}
