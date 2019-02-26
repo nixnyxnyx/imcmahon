@@ -7,7 +7,7 @@ if(sessionStorage.getItem("bg_color") != null) {
     defaultColor = sessionStorage.getItem("bg_color");
 }
 else {
-    defaultColor = '#4d005c';
+    defaultColor = '130047';
 }
 curColor = defaultColor;
 
