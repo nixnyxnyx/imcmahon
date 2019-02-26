@@ -58,27 +58,25 @@ img{
 /* NAV BAR */
 
 .nav-bar {
-	width: 100%;
-	height: 8%;
+	position: fixed;
+	width: 15%;
+	height: 100%;
 	background: var(--nav-color);
-	position: static;
 }
 
-.nav-bar > .tab {
-	height: 100%;
-	padding: 0 8px 0 8px;
-	line-height: 80px;
+.nav-bar .tab {
+	width: 100%;
+	padding: 10px 0 10px 0;
 	text-align: center;
 	color: var(--nav-text-color);
-	display: inline-block;
-	margin: 0;
-	font-family: Arial;
-	text-decoration: none;
+	font-family: 'Arial';
+	font-size: 13px;
+	line-height: 27px;
+	background: var(--nav-color);
 }
 
-.nav-bar > .tab:hover {
-  	text-decoration: underline;
-  	height: calc(100% + 10px);
+.nav-bar .tab:hover {
+	width: calc(100% + 10px);
 }
 
 .content {
