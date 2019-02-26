@@ -71,6 +71,7 @@ img{
 	line-height: 50px;
 	text-align: center;
 	color: var(--nav-text-color);
+	background: var(--nav-color);
 	display: inline-block;
 	margin: 0;
 	font-family: Arial;
