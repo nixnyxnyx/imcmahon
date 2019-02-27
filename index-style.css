@@ -71,7 +71,7 @@ img{
 
 #nav a  {
 	display:block;
-	background:url(menu.png);
+	background:url(/assets/menu.png);
 	height:50px;
 	text-indent:-9000px;
 }
@@ -94,7 +94,7 @@ img{
 }
 
 .hero-image {
-    background-image: url("professional.png");
+    background-image: url(/assets/professional.png);
     background-color: #e3e3e3;
     height: 600px;
 	  width: 1500px:
