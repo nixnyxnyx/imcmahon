@@ -85,7 +85,7 @@ img{
 #nav a.link5 {background-position:0px -200px;}
 #nav a.link5:hover {background-position:-251px -200px;}
 
-gradient {
+.gradient {
     height: 100%;
     width: 100%;
     background-image: -webkit-linear-gradient(135deg, var(--nav-color), var(--bg-color));
