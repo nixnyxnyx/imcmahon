@@ -30,6 +30,7 @@
 }
 
 .loading-screen-text {
+    font-family: Droid Sans;
 	font-size: 15px;
 	letter-spacing: 2px;
 	width: 100%;
@@ -92,11 +93,19 @@ img{
     background-image: linear-gradient(55deg, rgba(0,0,0,0) 50%, rgba(18, 0, 71, 0.3) 100%);
 }
 
-.content {
+.background {
+    height: 100%;
+    width: 100%;
     background-image: url(starmap.png);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-left: 300px;
+}
+
+.content {
 	width: 80%;
 	padding-top: 0px;
 	margin-top: 0px;
