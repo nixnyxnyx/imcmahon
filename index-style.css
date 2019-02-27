@@ -1,4 +1,6 @@
-﻿:root {
+﻿@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+:root {
 	--bg-color: #e3e3e3;
 	--nav-color: unset;
 	--nav-text-color: #dbd6ea;
@@ -57,30 +59,28 @@ img{
 
 /* NAV BAR */
 
-.nav-bar {
-	width: 100%;
-	height: 10%;
-	background: var(--nav-color);
-	position: fixed;
+#nav {
+	border-right:1px solid #999;
+	padding:10px 0px;
+	width:250px;
 }
 
-.nav-bar > .tab {
-	width: 19.5%;
-	height: 100%;
-	line-height: 10%;
-	text-align: center;
-	color: var(--nav-text-color);
-	background: var(--nav-color);
-	display: inline-block;
-	margin: 0;
-	font-family: Arial;
-	text-decoration: none;
+#nav a  {
+	display:block;
+	background:url(menu.png);
+	height:47px;
+	text-indent:-9000px;
 }
 
-.nav-bar > .tab:hover {
-  	text-decoration: underline;
-  	height: calc(100% + 10px);
-}
+#nav a.link1:hover {background-position:-251px 0px;}
+#nav a.link2 {background-position:0px -50px;}
+#nav a.link2:hover {background-position:-251px -100px;}
+#nav a.link3 {background-position:0px -100px;}
+#nav a.link3:hover{background-position:-251px -100px;}
+#nav a.link4 {background-position:0px -150px;}
+#nav a.link4:hover {background-position:-251px -150px;}
+#nav a.link5 {background-position:0px -200px;}
+#nav a.link5:hover {background-position:-251px -200px;}
 
 .content {
 	width: 80%;
