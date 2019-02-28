@@ -52,9 +52,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Droid Sans", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-twothird" style="margin-left: 500px">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-quote-left fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Welcome!</h2>
-        <div class="w3-container">
+      <div class="w3-container w3-card w3-white w3-dropdown-click w3-margin-bottom">
+        <button onclick="drop()" class="w3-text-grey w3-padding-16"><i class="fas fa-quote-left fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Welcome!</button>
+        <div class="w3-container w3-dropdown-content">
           <h6>I'm a Sophomore in Physics, and here's some things about me.</h6><hr>
         </div>
       </div>
@@ -166,6 +166,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Droid Sans", sans-serif}
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script>
+function drop() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
