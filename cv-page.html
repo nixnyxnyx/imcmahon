@@ -52,11 +52,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Droid Sans", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-twothird" style="margin-left: 500px">
-      <div class="w3-container w3-card w3-white w3-dropdown-click w3-margin-bottom">
-        <button onclick="drop()" class="w3-text-grey w3-padding-16"><i class="fas fa-quote-left fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Welcome!</button>
-        <div class="w3-container w3-dropdown-content">
+      <button class="w3-container w3-card w3-white w3-button w3-margin-bottom">
+        <i class="fas fa-quote-left fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> Welcome!
+      </button>
+      <div id="welcome" class="w3-container w3-hide">
           <h6>I'm a Sophomore in Physics, and here's some things about me.</h6><hr>
-        </div>
       </div>
 
       <div class="w3-container w3-card w3-white w3-margin-bottom">
@@ -168,8 +168,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Droid Sans", sans-serif}
 </footer>
 
 <script>
-function drop() {
-  var x = document.getElementById("Demo");
+function drop(id) {
+  var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
