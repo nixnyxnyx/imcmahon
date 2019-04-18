@@ -12,6 +12,8 @@
 
 <body class="w3-light-grey">
 
+<button onclick="topFunction()" id="returntop">Top</button>
+
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -214,6 +216,8 @@
 </div>
 
 <script>
+
+// For drop-down buttons
 function drop(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
@@ -222,6 +226,24 @@ function drop(id) {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+//
+
+// For return-to-top button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("returntop").style.display = "block";
+  } else {
+    document.getElementById("returntop").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//
 </script>
 
 </body>
