@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+  <title>Isaac McMahon</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Droid+Sans'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" href="assets/lattice.png">
+  <style>html,body,h1,h2,h3,h4,h5,h6 {font-family: "Droid Sans", sans-serif}</style>
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third" style="position:fixed">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="assets/professional.png" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-contairer" style="height:50%;width:100%;background-image:linear-gradient(200deg,rgba(0,0,0,0)50%,rgba(0,0,0,0.8)100%)"></div>
+          <div class="w3-display-bottomleft w3-container w3-text-light-grey" style="padding-left:20px">
+            <h2>Isaac McMahon</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fas fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-blue"></i>Student</p>
+          <p><i class="fas fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Pittsburgh, PA</p>
+          <p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>
+            <a href="mailto:imcmahon@physicist.net">imcmahon@physicist.net</a> | <a href="mailto:imcmahon@andrew.cmu.edu">imcmahon@andrew.cmu.edu</a>
+          </p>
+          <p><i class="fas fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>225-284-2611</p>
+          <hr>
+          <div class="w3-center">
+            <span style="font-size: 20px; color: #130047;transition-duration:0.25s;transition-timing-function:linear;">
+              <a href="https://www.facebook.com/Zack.0000.01" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+              <a href="https://www.linkedin.com/in/isaac-m-272424137/" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+              <a href="https://www.instagram.com/whomeasuredthecat/" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+              <a href="https://github.com/nixnyxnyx" target="_blank"><i class="fab fa-github w3-hover-opacity"></i></a>
+            </span>
+          </div>
+          <hr>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird" style="margin-left: 510px">
+
+      <!-- Nav Bar Block -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding: 0 0 0 0">
+        <div class="w3-container w3-xlarge" style="text-align:center">
+          <a href='index.html' class=element> Home </a>
+          <a href='resume.html' class=element> Experience </a>
+          <a href='gallery.html' class=element> Projects </a>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding: 0 0 0 0">
+        <button onclick="drop('welcome')" class="w3-button w3-block w3-left-align w3-text-grey w3-xxlarge">
+          <i class="fas fa-quote-left fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Welcome!
+        </button>
+        <div id='welcome' class="w3-container w3-hide"><hr>
+          <h6>I'm a Sophomore in Physics, and here's some things about me.</h6><hr>
+        </div>
+      </div>
+
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding: 0 0 0 0">
+        <button onclick="drop('education')" class="w3-button w3-block w3-left-align w3-text-grey w3-xxlarge">
+          <i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education
+        </button>
+        <div id="education" class="w3-container w3-hide"><hr>
+          <h5 class="w3-opacity"><b>Carnegie Mellon University</b></h5>
+          <h6 class="w3-text-blue"><i class="fas fa-university fa-fw w3-margin-right"></i>B.S. in Physics with a Minor in Sound Design (Grad. 2021)</h6>
+          <h6 class="w3-text-blue"><i class="fas fa-angle-right fa-fw w3-margin-right" style="margin-left:20px"></i>GPA 3.87</h6>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding: 0 0 0 0">
+        <button onclick="drop('experience')" class="w3-button w3-block w3-left-align w3-text-grey w3-xxlarge">
+          <i class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience
+        </button>
+        <div id="experience" class="w3-hide">
+          <div class="w3-container"><hr>
+            <h5 class="w3-opacity"><b>Summer Intern | Air Force Research Laboratory</b></h5>
+            <h6 class="w3-text-blue"><i class="far fa-calendar-alt fa-fw w3-margin-right"></i>Summer 2018</h6>
+            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Office Assistant | CMU Computer Science Department</b></h5>
+            <h6 class="w3-text-blue"><i class="far fa-calendar-alt fa-fw w3-margin-right"></i>Aug 2017 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding: 0 0 0 0">
+        <button onclick="drop('programming')" class="w3-button w3-block w3-left-align w3-text-grey w3-xxlarge">
+          <i class="fas fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Skills
+        </button>
+        <div id="programming" class="w3-hide">
+        <div class="w3-container"><hr>
+          <h5 class="w3-text-blue"><b>Programming</b></h5>
+          <h6 class="w3-opacity">Python</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-green" style="width:100%">Proficient</div>
+          </div>
+          <h6 class="w3-opacity">C++ / Arduino</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-light-green" style="width:60%">Familiar</div>
+          </div>
+          <h6 class="w3-opacity">Mathematica</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-light-green" style="width:50%">Familiar</div>
+          </div>
+          <hr>
+
+          <h5 class="w3-text-blue"><b>Software</b></h5>
+          <h6 class="w3-opacity">Solidworks</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-green" style="width:70%">Proficient</div>
+          </div>
+          <h6 class="w3-opacity">Microsoft Office</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-green" style="width:100%">Proficient</div>
+          </div>
+          <h6 class="w3-opacity">FreeCAD</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-light-green" style="width:60%">Familiar</div>
+          </div>
+          <hr>
+
+          <h5 class="w3-text-blue"><b>Fabrication</b></h5>
+          <h6 class="w3-opacity">3D Printing | FDM SLA</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-green" style="width:100%">Proficient</div>
+          </div>
+          <h6 class="w3-opacity">CNC Milling</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-light-green" style="width:50%">Familiar</div>
+          </div>
+          <hr>
+
+          <h5 class="w3-text-blue"><b>Languages</b></h5>
+          <h6 class="w3-opacity">English</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-green" style="width:100%">Native</div>
+          </div>
+          <h6 class="w3-opacity">Chinese</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-green" style="width:80%">Proficient</div>
+          </div>
+          <h6 class="w3-opacity">Ancient Greek, Latin, and Hebrew</h6>
+          <div class="w3-light-grey w3-round-large w3-small">
+            <div class="w3-container w3-center w3-round-large w3-light-green" style="width:50%">Familiar</div>
+          </div>
+          <hr>
+
+        </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom" style="padding: 0 0 0 0">
+        <button onclick="drop('activities')" class="w3-button w3-block w3-left-align w3-text-grey w3-xxlarge">
+          <i class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Activities
+        </button>
+        <div id="activities" class="w3-hide">
+          <div class="w3-container"><hr>
+            <h5><a href="https://cmu.klesis.org/" target="_blank" class="w3-text-blue"><b>Klesis Fellowship</b></h5>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-text-blue"><b>Musician</b></h5>
+            <p>I am a guitarist, and I'm currently learning to build my own pedals.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-text-blue"><b>Maker</b></h5>
+            <p>I have made several projects by using and learning skills like 3D printing, laser cutting, electronics, and woodworking. I have many more projects planned.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-text-blue"><b>Disc Golfer</b></h5>
+            <p>I am an active tournament attendee and a former organizer at local leagues and courses</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-text-blue"><b>Harvard Summer School</b></h5>
+            <p>I took two accelerated summer physics courses while living at Harvard</p>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<script>
+function drop(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
