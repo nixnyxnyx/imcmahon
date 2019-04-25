@@ -238,4 +238,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 #returntop:hover{background-color:#916dff;color:#fff;}
 
 @media (min-width:1024px){.navfont{font-size:24px}}
-@media (max-width:480px){.navfont{font-size:12px}}
+@media (max-width:480px){.navfont{font-size:15px}}
