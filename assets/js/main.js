@@ -1,22 +1,22 @@
 // light/dark toggle
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-const isDarkModeOn = document.querySelector('#dark-mode-prompt');
+const isLightModeOn = document.querySelector('#light-mode-prompt');
 
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark'); //add this
-        $("#btn-outline1").removeClass('btn-outline-dark').addClass('btn-outline-light');
-        $("#btn-outline2").removeClass('btn-outline-dark').addClass('btn-outline-light');
-        isDarkModeOn.innerHTML = `Dark Mode`;
-    }
-    else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
         $("#btn-outline1").removeClass('btn-outline-light').addClass('btn-outline-dark');
         $("#btn-outline2").removeClass('btn-outline-light').addClass('btn-outline-dark');
         isDarkModeOn.innerHTML = `Light Mode`;
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+        $("#btn-outline1").removeClass('btn-outline-dark').addClass('btn-outline-light');
+        $("#btn-outline2").removeClass('btn-outline-dark').addClass('btn-outline-light');
+        isDarkModeOn.innerHTML = `Dark Mode`;
     }    
 }
 
@@ -27,10 +27,10 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
 
-    if (currentTheme === 'dark') {
+    if (currentTheme === 'light') {
         toggleSwitch.checked = true;
-        $("#btn-outline1").removeClass('btn-outline-dark').addClass('btn-outline-light');
-        $("#btn-outline2").removeClass('btn-outline-dark').addClass('btn-outline-light');
-        isDarkModeOn.innerHTML = `Dark Mode`;
+        $("#btn-outline1").removeClass('btn-outline-light').addClass('btn-outline-dark');
+        $("#btn-outline2").removeClass('btn-outline-light').addClass('btn-outline-dark');
+        isDarkModeOn.innerHTML = `Light Mode`;
     }
 }
