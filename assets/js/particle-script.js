@@ -1,14 +1,14 @@
 particlesJS("particle-container", {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "random"
+        "value": "#dddddd"
       },
       "shape": {
         "type": "circle",
@@ -26,10 +26,10 @@ particlesJS("particle-container", {
         }
       },
       "opacity": {
-        "value": 0.5,
-        "random": false,
+        "value": 1,
+        "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
           "opacity_min": 0.1,
           "sync": false
@@ -56,7 +56,7 @@ particlesJS("particle-container", {
         "enable": true,
         "speed": 1,
         "direction": "none",
-        "random": false,
+        "random": true,
         "straight": false,
         "out_mode": "out",
         "bounce": false,
