@@ -9,14 +9,14 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'dark'); //add this
         $("#btn-outline1").removeClass('btn-outline-dark').addClass('btn-outline-light');
         $("#btn-outline2").removeClass('btn-outline-dark').addClass('btn-outline-light');
-        isDarkModeOn.innerHTML = `Dark Mode Enabled`;
+        isDarkModeOn.innerHTML = `Dark Mode`;
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
         $("#btn-outline1").removeClass('btn-outline-light').addClass('btn-outline-dark');
         $("#btn-outline2").removeClass('btn-outline-light').addClass('btn-outline-dark');
-        isDarkModeOn.innerHTML = `Light Mode On`;
+        isDarkModeOn.innerHTML = `Light Mode`;
     }    
 }
 
@@ -31,6 +31,6 @@ if (currentTheme) {
         toggleSwitch.checked = true;
         $("#btn-outline1").removeClass('btn-outline-dark').addClass('btn-outline-light');
         $("#btn-outline2").removeClass('btn-outline-dark').addClass('btn-outline-light');
-        isDarkModeOn.innerHTML = `Dark Mode Enabled`;
+        isDarkModeOn.innerHTML = `Dark Mode`;
     }
 }

@@ -144,7 +144,7 @@ p {
   align-items: center;
 }
 .theme-switch-wrapper em {
-  font-family: 'Mansalva', cursive;
+  font-family: 'Mansalva';
   margin-left: 5px;
   padding-bottom: 7px;
   font-size: 0.8em;
@@ -183,7 +183,7 @@ p {
 }
 
 input:checked + .slider {
-  background-color: #f140fa;
+  background-color: #734e80;
 }
 
 input:checked + .slider:before {
