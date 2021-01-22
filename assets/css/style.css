@@ -7,8 +7,8 @@
   --heading-color: #818cab;
   --bg-color1: #161625; 
   --bg-color2: #00005e; 
-  --bg-color3: #342e00;
-  --bg-color4: #013025;
+  --bg-color3: #0e0034;
+  --bg-color4: #210105;
   --shadow-color1: rgba(218, 218, 218, 0.18);
   --shadow-color2: rgba(249, 249, 249, 0.15);
 }
@@ -79,7 +79,7 @@ body {
 */
 
 .container {
-  margin-top: 5em;
+  margin-top: 8em;
   margin-left: auto;
   margin-right: auto;
   width: 670px;
@@ -108,7 +108,6 @@ p {
 
 .intro a {
   border-bottom: 3px solid transparent;
-  padding-top: 3rem;
   text-decoration: none;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -162,7 +161,7 @@ p {
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: #888;
   bottom: 0;
   cursor: pointer;
   left: 0;
